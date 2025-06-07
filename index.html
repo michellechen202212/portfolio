@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Selene Sahari · Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
       font-family: Georgia, serif;
-      max-width: 700px;
+      max-width: 720px;
       margin: 40px auto;
       padding: 0 20px;
       color: #111;
@@ -19,9 +20,6 @@
     h1 {
       font-size: 2em;
     }
-    h2 {
-      margin-top: 2em;
-    }
     hr {
       border: 0;
       border-top: 1px solid #ccc;
@@ -30,6 +28,18 @@
     a {
       color: #4a3cff;
       text-decoration: none;
+    }
+    .thumbnail-strip {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 1.5em 0;
+    }
+    .thumbnail-strip img {
+      width: 30%;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      object-fit: cover;
     }
   </style>
 </head>
@@ -50,6 +60,12 @@
     <li><strong>Visual storytelling across:</strong> Morocco, Asia, Europe, and North America — each location woven into the project’s symbolic grammar</li>
   </ul>
   <p>This ongoing series challenges inherited scripts of femininity and visibility. Through framing, gesture, and atmosphere, it explores what it means to move through space unperformed — not as an object, but as author.</p>
+
+  <div class="thumbnail-strip">
+    <img src="path-to-image1.jpg" alt="Thumbnail 1" />
+    <img src="path-to-image2.jpg" alt="Thumbnail 2" />
+    <img src="path-to-image3.jpg" alt="Thumbnail 3" />
+  </div>
 
   <hr/>
 
