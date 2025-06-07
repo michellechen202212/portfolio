@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sovereign Gallery – Selene Sahari</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Visual Folio: Signals of Sovereignty</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background: #fefefe;
-      color: #1c1c1e;
+      font-family: 'Georgia', serif;
       margin: 0;
-      padding: 0;
+      background: #fff;
+      color: #111;
     }
+
     h1 {
-      font-family: 'Playfair Display', serif;
       text-align: center;
+      margin-top: 2rem;
       font-size: 2.5rem;
-      padding: 2rem 1rem 1rem;
     }
+
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 48px;
-      max-width: 1024px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 4rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
+
     .photo-card img {
       width: 100%;
+      height: auto;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
     }
+
+    .photo-card img:hover {
+      transform: scale(1.015);
+    }
+
     .caption {
-      margin-top: 1rem;
+      margin-top: 0.75rem;
     }
+
     .caption h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.25rem;
-      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      margin: 0;
     }
-    .caption .meta {
+
+    .meta {
       font-size: 0.9rem;
       color: #666;
       margin-bottom: 0.5rem;
     }
-    .caption .quote {
+
+    .quote {
       font-style: italic;
       font-size: 1rem;
       color: #333;
     }
   </style>
 </head>
+
 <body>
   <h1>Visual Folio: Signals of Sovereignty</h1>
+
   <div class="gallery">
 
     <div class="photo-card">
@@ -97,7 +107,7 @@
       <div class="caption">
         <h3>Camel Lineage</h3>
         <p class="meta">Merzouga, Morocco · March 2025</p>
-        <p class="quote">She stands beside the lineage of traders and travelers. No longer passing through — she becomes the still point, the axis, the sovereign witness to all crossings.</p>
+        <p class="quote">She stands beside the lineage of traders and travelers. No longer passing through — she becomes the still point, the axis of her own journey.</p>
       </div>
     </div>
 
@@ -106,7 +116,7 @@
       <div class="caption">
         <h3>Rabat Coastline</h3>
         <p class="meta">Rabat, Morocco · March 2025</p>
-        <p class="quote">Wind and sea at her back, she stands where continent meets ocean — a boundary both literal and internal, where voice meets volume.</p>
+        <p class="quote">Wind and sea at her back, she stands where continent meets ocean — a boundary both literal and internal, where voice meets silence and becomes signal.</p>
       </div>
     </div>
 
