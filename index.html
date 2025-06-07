@@ -4,17 +4,28 @@
   <meta charset="UTF-8">
   <title>Visual Folio: Signals of Sovereignty</title>
   <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #111111;
+      --text-light: #111111;
+      --text-dark: #eeeeee;
+      --accent: #b71c1c;
+      --font-serif: 'Georgia', serif;
+    }
+
     body {
-      font-family: 'Georgia', serif;
+      font-family: var(--font-serif);
       margin: 0;
-      background: #fff;
-      color: #111;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     h1 {
       text-align: center;
+      font-size: 2.6rem;
       margin-top: 2rem;
-      font-size: 2.5rem;
+      letter-spacing: -0.5px;
     }
 
     .gallery {
@@ -24,6 +35,25 @@
       max-width: 1200px;
       margin: 2rem auto;
       padding: 0 1rem;
+    }
+
+    .photo-card {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .photo-card:nth-child(2) { animation-delay: 0.1s; }
+    .photo-card:nth-child(3) { animation-delay: 0.2s; }
+    .photo-card:nth-child(4) { animation-delay: 0.3s; }
+    .photo-card:nth-child(5) { animation-delay: 0.4s; }
+    .photo-card:nth-child(6) { animation-delay: 0.5s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .photo-card img {
@@ -58,10 +88,41 @@
       font-size: 1rem;
       color: #333;
     }
+
+    /* Dark mode toggle */
+    .toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.4rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-light);
+      transition: color 0.3s ease;
+    }
+
+    .dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .dark-mode .meta {
+      color: #aaa;
+    }
+
+    .dark-mode .quote {
+      color: #ddd;
+    }
+
+    .dark-mode .toggle {
+      color: var(--text-dark);
+    }
   </style>
 </head>
 
 <body>
+  <button class="toggle" onclick="document.body.classList.toggle('dark-mode')">🌗</button>
   <h1>Visual Folio: Signals of Sovereignty</h1>
 
   <div class="gallery">
@@ -121,5 +182,6 @@
     </div>
 
   </div>
+
 </body>
 </html>
